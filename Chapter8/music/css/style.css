@@ -4,7 +4,7 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1 {
+body, header, nav, main, footer, img, h1, ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -175,4 +175,83 @@ nav li {
 #contact .email-link {
     width: 95%;
     height: 50%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    /* Tablet Viewport: Style rule for header content */
+    span.tab-desk {
+        display: inline;
+    }
+
+    /* Tablet Viewport: Style rules for nav area. */
+    nav li {
+        border: none;
+        display: inline-block;
+        font-size: 1.5em;
+        border-right: 1px solid #e5e9fc;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.25em 0.5em;
+    }
+
+    /* Tablet Viewport: Style rule for map. */
+    .map {
+        width: 500px;
+        height: 450px;
+    }
+}
+
+/* Media Query for Desktop Viewport. */
+@media screen and (min-width: 769px) {
+    /* Desktop Viewport: Style rule for header. */
+    header {
+        padding: 2%;
+    }
+
+    /* Desktop Viewport: Style rules for nav area. */
+
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover {
+        color: #373684;
+        background-color: #e5e9fc;
+    }
+
+    /* Desktop Viewport: Style rules for main content. */
+    #info ul {
+        margin-left: 5%;
+    }
+
+    main h3 {
+        font-size: 1.5em;
+    }
+
+    #piano, #guitar, #violon {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    } 
+}
+
+@media print and (min-width: 769px) {
+     /* Media Query for Print. */
+    body {
+        color: #fff;
+        background-color: #000;
+    }
 }
