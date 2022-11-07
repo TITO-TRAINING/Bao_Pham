@@ -120,11 +120,11 @@ header {
 }
 
 ul {
-
+    text-decoration: none;
 }
 
 nav ul {
-
+    text-decoration: none;
 }
 
 nav li {
