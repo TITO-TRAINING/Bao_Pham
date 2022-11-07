@@ -18,6 +18,19 @@ img {
     margin: auto;
 }
 
+/* Style rules for mobile viewport */
+
+
+/* Hide tab-desk class */
+.tab-desk {
+    display: none;
+    font-size: 1.5em;
+}
+
+ul {
+
+}
+
 /* Style rules for header content */
 header {
     text-align: center;
@@ -41,8 +54,9 @@ nav ul {
 }
 
 nav li {
-    display: inline-block;
+    display: block;
     font-size: 2em;
+    border-top: 1px solid #e5e9fc;
 }
 
 nav li a {
