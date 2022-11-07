@@ -106,3 +106,73 @@ footer a {
     color: #4645a8;
     text-decoration: none;
 }
+
+/* Style rules for mobile viewport */
+
+
+/* Hide tab-desk class */
+.tab-desk {
+    display: none;
+}
+
+header {
+    font-size: 1.5em;
+}
+
+ul {
+
+}
+
+nav ul {
+
+}
+
+nav li {
+    display: block;
+    border-top: 1px solid #e5e9fc;
+}
+
+.action {
+    font-size: 1.25em;
+}
+
+#piano, #guitar, #violon {
+    
+}
+
+#info {
+
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+#contact {
+
+}
+
+.tel-link {
+    background-color: #373684;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+#contact .email-link {
+    width: 95%;
+    height: 50%;
+}
