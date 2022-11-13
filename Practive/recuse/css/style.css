@@ -42,26 +42,6 @@ nav {
     background-color: #2a1f14;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    text-align: center;
-}
-
-nav li {
-    display: block;
-    font-size: 1.5em;
-    font-family: Geneva, Arial, sans-serif;
-}
-
-nav li a {
-    display: block;
-    color: #f6eee4;
-    border: 0.5px solid #f6eee4;
-    padding: 0.5em 2em;
-    text-decoration: none;
-}
-
 /* Style rules for main content */
 
 main {
@@ -116,6 +96,21 @@ main ul {
     color: #f6eee4;
     text-decoration: none;
     font-weight: bold;
+}
+
+#questions p {
+    cursor: pointer;
+}
+
+#answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#answer h2 {
+    display: none;
 }
 
 /* Style rules for main content */
@@ -187,6 +182,40 @@ main ul {
         font-size: 1.25em;
         border-radius: 10px;
     }
+
+    .mobile-nav a {
+        color: #fff;
+        text-align: center; 
+        font-size: 2em;
+        text-decoration: none;
+        padding: 3%;
+        display: block;
+    }
+
+    .mobile-nav a.nav-icon {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #f6eee4;
+        padding: 2%;
+    }
+
+    .nav-icon div {
+        height: 40px;
+        width: 40px;
+        color: #2a1f14;
+    }
+
+    #nav-links, .tab-desk, .desktop {
+        display: none;
+    } 
+
+    .mobile h1 {
+        margin: 2% 0 0 3%;
+    }
+
+
 }
 
 
@@ -233,17 +262,24 @@ footer a {
         display: none;
     }
 
-
-
+    
     /*  Tablet Viewport: Style rules for nav area */
+    nav ul {
+        list-style: none;
+        margin: 0;
+        text-align: center;
+    }
+
     nav li {
-        display: inline-block;
-        font-size: 1.25em;
-        border-top: none;
+        font-family: Geneva, Arial, sans-serif;
+        font-weight: bold;
     }
 
     nav li a {
-        padding: 0.5em;
+        display: block;
+        color: #f6eee4;
+        border: 0.5px solid #f6eee4;
+        text-decoration: none;
     }
 
     .grid {
@@ -260,6 +296,10 @@ footer a {
     form {
         width: 70%;
         margin: 0 auto;
+    }
+
+    .mobile-nav, .mobile {
+        display: none;
     }
 }
 
