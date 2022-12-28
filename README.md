@@ -11,7 +11,7 @@ Responsive web design: web design and development will respond to any user's dev
 - Posthtml-doctype
 - Posthtml-include
 # WEB DESIGN:
-Design(https://www.figma.com/file/JhGap6vIL5l8t4hz5OF6sz/Hofmann-UI-Kit---Page-Templates-(Copy)-(Copy)?node-id=0%3A1&t=B89YAItzZLS3JmCG-0)
+Design ( https://www.figma.com/file/JhGap6vIL5l8t4hz5OF6sz/Hofmann-UI-Kit---Page-Templates-(Copy)-(Copy)?node-id=0%3A1&t=B89YAItzZLS3JmCG-0 )
 # SOURCE CODE
 - Step1: Clone project : git clone git
 # HOW TO RUN
@@ -19,7 +19,7 @@ Design(https://www.figma.com/file/JhGap6vIL5l8t4hz5OF6sz/Hofmann-UI-Kit---Page-T
 
 - Install the dependencies and devDependencies and start the server.
 
-cd LandingPage
-pnpm i
-pnpm dev run
-Open on web: http://localhost:1234
++ cd LandingPage
++ pnpm i
++ pnpm dev run
++ Open on web: http://localhost:1234
