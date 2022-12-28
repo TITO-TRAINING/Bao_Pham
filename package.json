@@ -1,0 +1,24 @@
+{
+  "name": "bao_pham",
+  "version": "1.0.0",
+  "description": "- This document provides the list of important technologies that would be used to implement, the objectives to be achieved and the progress of the project.",
+  "scripts": {
+    "dev": "parcel ./src/pages/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TITO-TRAINING/Bao_Pham.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TITO-TRAINING/Bao_Pham/issues"
+  },
+  "homepage": "https://github.com/TITO-TRAINING/Bao_Pham#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.4"
+  }
+}
