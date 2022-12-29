@@ -1,0 +1,17 @@
+{
+  "extends": ["some-other-config-you-use", "prettier"],
+  "rules": {
+    "indent": "error",
+    "prettier/prettier": [
+      "warning",
+      {
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "printWidth": 80,
+        "tabWidth": 2,
+        "endOfLine": false
+      }
+    ]
+  }
+}
