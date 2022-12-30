@@ -1,0 +1,140 @@
+@import url('../_reset.css');
+
+.header_top {
+  width: 100%;
+  height: 156px;
+  display: flex;
+  justify-content: space-around;
+  background: var(--bg-color);
+  letter-spacing: var(--spacing-letter);
+}
+
+.header_top-logo {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: var(--text-color-primary);
+  display: flex;
+  align-items: center;
+}
+
+.header_top-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header_top-navigation a {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: var(--spacing-letter);
+  line-height: 0;
+}
+
+ul .item {
+  margin: 0 22px;
+  text-align: center;
+}
+
+.item:last-child {
+  padding: 15px 25px;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  width: 180px;
+  height: 48px;
+  margin-right: 0;
+}
+
+.header_top-navigation .item {
+  display: inline-block;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.header_bottom {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--text-color-primary);
+  opacity: 0.3;
+}
+
+.header_bottom-main {
+  height: 768px;
+  /* background: url('../../assets/images/background.png'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_bottom-main .content {
+  z-index: 1;
+}
+
+.title {
+  font-weight: 400;
+  font-size: var(--font-size-title);
+  font-style: normal;
+  color: var(--text-color-binary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-weight: 400;
+  color: var(--text-color-binary);
+  font-size: var(--font-size-subtitle);
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.input-email {
+  width: 270px;
+  height: 48px;
+  border: 2px solid var(--bg-color);
+  border-radius: 4px;
+  background: none;
+  margin: 0 14px;
+}
+
+.btn-submit {
+  background: none;
+  height: 48px;
+  font-size: 16px;
+  border: 2px solid var(--text-color-binary);
+  margin: 0 14px;
+  color: var(--text-color-binary);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.icon div {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

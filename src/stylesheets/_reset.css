@@ -1,4 +1,24 @@
-body {
+:root {
+  --text-color-primary: #ebcb80;
+  --text-color-binary: #4b4b4b;
+  --bg-color: #4b4b4b;
+  --spacing-letter: 0.0555556em;
+  --font-size-title: 44px;
+  --font-size-subtitle: 16px;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+html {
+  font-family: Roboto;
+}
+
+body,
+p,
+a {
   margin: 0;
   padding: 0;
 }
@@ -10,4 +30,19 @@ a {
 ul,
 ol {
   list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--font-size-subtitle);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 37px;
 }
