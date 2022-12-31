@@ -68,7 +68,7 @@ ul .item {
 
 .header_bottom-main {
   height: 768px;
-  /* background: url('../../assets/images/background.png'); */
+  background: url('../../assets/images/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
