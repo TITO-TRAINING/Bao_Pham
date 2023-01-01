@@ -8,8 +8,8 @@
 
 # TARGET:
 
-- Apply CSS
-- Responsive web design
+- Apply HTML,CSS
+- Responsive web design: web design and development will respond to any user's device and environment according to device screen size and size criteria.
 
 # TECHNICAL STACKS
 
@@ -32,6 +32,6 @@
 
 - Install the dependencies and devDependencies and start the server.
   - cd BAO_PHAM
-  - pnpm i
-  - pnpm run dev
+  - npm i
+  - npm run dev
   - Open on web: http://localhost:1234
