@@ -36,6 +36,10 @@ ol {
   box-sizing: border-box;
 }
 
+.letter-spacing {
+  letter-spacing: var(--spacing-letter);
+}
+
 .btn {
   padding: 15px 25px;
   border-radius: 50px;

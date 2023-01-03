@@ -2,11 +2,10 @@
 
 .header_top {
   width: 100%;
-  height: 156px;
+  padding: 2.4375rem 0;
   display: flex;
   justify-content: space-around;
   background: var(--bg-color);
-  letter-spacing: var(--spacing-letter);
 }
 
 .header_top-logo {
@@ -39,8 +38,6 @@ ul .item {
   padding: 15px 25px;
   border: 2px solid #ffffff;
   border-radius: 50px;
-  width: 180px;
-  height: 48px;
   margin-right: 0;
 }
 
@@ -67,8 +64,8 @@ ul .item {
 }
 
 .header_bottom-main {
-  height: 768px;
-  /* background: url('../../assets/images/background.png'); */
+  padding: 15rem 0;
+  background: url('../../assets/images/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
