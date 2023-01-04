@@ -1,6 +1,7 @@
 :root {
   --text-color-primary: #ebcb80;
   --text-color-binary: #4b4b4b;
+  --text-color-third: #ffffff;
   --bg-color: #4b4b4b;
   --spacing-letter: 0.0555556em;
   --font-size-title: 44px;
@@ -41,12 +42,12 @@ ol {
 }
 
 .btn {
-  padding: 15px 25px;
-  border-radius: 50px;
+  padding: 1rem 1.5625rem;
+  border-radius: 3.125rem;
   font-style: normal;
   font-weight: 400;
   font-size: var(--font-size-subtitle);
   text-transform: uppercase;
   text-align: center;
-  padding: 15px 37px;
+  padding: 1rem 2.25rem;
 }

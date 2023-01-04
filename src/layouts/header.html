@@ -5,12 +5,9 @@
         hofmann
       </p>
       <nav class="header_top-navigation">
-        <ul>
-          <li class="item"><a href="">mission</a></li>
-          <li class="item"><a href="">services</a></li>
-          <li class="item"><a href="">about</a></li>
-          <li class="item"><a href="">take a tour</a></li>
-        </ul>
+        <include src="./components/list.html" locals='{
+          "list": "[`mission`, `services`, `about`, `take a tour`]"
+        }'></include>
       </nav>
       <div class="hamburger-menu">
         <img src="../assets/icons/hamburger-menu.svg" alt="hamburger">
