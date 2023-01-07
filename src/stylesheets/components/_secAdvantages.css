@@ -1,0 +1,7 @@
+@import url('../components/_cardAdvantages.css');
+
+.section-card .subtitle {
+  color: var(--text-color-third);
+  margin: 0 auto;
+  max-width: 30%;
+}
