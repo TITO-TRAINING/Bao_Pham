@@ -1,0 +1,16 @@
+.location-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 80%;
+}
+
+.location-images .images {
+  width: 18.75rem;
+  margin: 0.375rem 0.75rem;
+}
+
+.location-images img {
+  width: 100%;
+}

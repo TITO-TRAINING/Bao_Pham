@@ -1,0 +1,43 @@
+.section-CTA {
+  display: flex;
+  justify-content: center;
+  background: url('../../assets/images/mask.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-CTA .container {
+  padding: 4.5rem 0 3rem;
+}
+
+.section-CTA .title {
+  color: var(--text-color-third);
+}
+
+.sign-up {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+}
+
+.sign-up input {
+  display: block;
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #999999;
+}
+
+.sign-up a {
+  text-decoration: underline;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  border: none;
+}
