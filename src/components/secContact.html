@@ -2,38 +2,44 @@
   <div class="container">
     <p class="title">Contact Us</p>
     <div class="content">
-      <div class="touch">Get In Touch
+      <div class="touch">
+        <p class="letter-spacing">Get In Touch</p>
         <ul>
-          <li class="item">
+          <li class="list-item">
             <img src="../assets/icons/location.svg">
-            <a href="">2300 W Arbutus Dr Citrus Springs, FL 34434, USA</a>
+            <p href="">2300 W Arbutus Dr Citrus Springs, FL 34434, USA</p>
           </li>
-          <li class="item">
+          <li class="list-item">
             <img src="../assets/icons/mail.svg">
-            <a href="">contact@hofmannui.net</a>
+            <p href="">contact@hofmannui.net</p>
           </li>
-          <li class="item">
+          <li class="list-item">
             <img src="../assets/icons/phone.svg">
-            <a href="">793-891-7938</a>
-            <a href="">512-915-5628</a>
-            <a href="">952-775-6021</a>
+            <div class="">
+              <p href="">793-891-7938</p>
+              <p href="">512-915-5628</p>
+              <p href="">952-775-6021</p>
+            </div>
           </li>
         </ul>
       </div>
       <div class="form-contact">
         <div class="card">
           <include src="./components/formContact.html"></include>
-          <button class="btn"></button>
+          <button class="btn btn-bg_primary">submit</button>
         </div>
       </div>
       <div class="credits">
-        <p>credits</p>
-        <p>In order to discuss the general function of the logo, we must firstly identify and define the environment
+        <p class="letter-spacing">Credits</p>
+        <p class="credits-content">In order to discuss the general function of the logo, we must firstly identify and
+          define the environment
           where this will have to fulfill its function.</p>
-        <p>Follow</p>
-        <include src="./components/listIcon.html" locals='{
-          "list": "[`../assets/icons/pinterest.svg`, `../assets/icons/linkedin.svg`, `../assets/icons/google-plus.svg`, `../assets/icons/twitter.svg`, `../assets/icons/facebook.svg`, `../assets/icons/instagram.svg`]"
+        <p class="letter-spacing">Follow</p>
+        <div class="credits-icon">
+          <include src="./components/listIcon.html" locals='{
+          "list": "[`../assets/icons/pinterest.svg`,`../assets/icons/linkedin.svg`, `../assets/icons/google-plus.svg`, `../assets/icons/twitter.svg`, `../assets/icons/facebook.svg`, `../assets/icons/instagram.svg`]"
         }'></include>
+        </div>
       </div>
     </div>
   </div>
