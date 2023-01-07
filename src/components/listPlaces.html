@@ -1,14 +1,14 @@
 <!-- desktop, tablet -->
-<ul class="">
+<ul class="{{display_desktop}}">
   <each loop="item in {{list}}">
     <li>
-      <p>{{item}}</p>
+      <p class="uppercase letter-spacing">{{item}}</p>
     </li>
   </each>
 </ul>
 <!-- mobile -->
-<select class="">
+<select class="{{display_mobile}}">
   <each loop="item in {{list}}">
-    <option>{{item}}</option>
+    <option class="uppercase letter-spacing">{{item}}</option>
   </each>
 </select>
