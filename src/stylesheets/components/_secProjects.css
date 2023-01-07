@@ -1,0 +1,12 @@
+@import url('../components/_cardProjecs.css');
+@import url('../components/_listPlaces.css');
+
+.section-projects {
+  background: var(--bg-projects);
+}
+
+.section-projects .container {
+  width: 80%;
+  margin: auto;
+  padding: 5.25rem 0;
+}
