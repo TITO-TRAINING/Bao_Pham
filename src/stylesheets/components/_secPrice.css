@@ -1,0 +1,24 @@
+@import url('../components/_cardPrice.css');
+
+.section-card {
+  background-color: var(--bg-color);
+}
+
+.price-title {
+  padding-top: 4.25rem;
+}
+
+.price-title .title {
+  color: #ffffff;
+}
+
+.price-list {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.875rem;
+}
+
+@media screen and (max-width: 541px) {
+  .price-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
