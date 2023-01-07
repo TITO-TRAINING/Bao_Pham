@@ -37,6 +37,10 @@ ol {
   box-sizing: border-box;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .btn {
   width: 198px;
   height: 48px;
@@ -52,7 +56,7 @@ ol {
 
 .gird {
   display: grid;
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding-top: 3.3125rem;
   padding-bottom: 5rem;
