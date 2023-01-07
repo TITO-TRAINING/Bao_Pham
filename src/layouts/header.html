@@ -24,15 +24,9 @@
             <button type="submit" class="btn btn-submit">find now</button>
           </form>
           <div class="icon">
-            <div class="icon-plane">
-              <img src="../assets/icons/plane.svg" alt="Plane">
-            </div>
-            <div class="icon-wallet">
-              <img src="../assets/icons/wallet.svg" alt="Wallet">
-            </div>
-            <div class="icon-case">
-              <img src="../assets/icons/case.svg" alt="Case">
-            </div>
+            <include src="./components/listIcon.html" locals='{
+              "list": "[`../assets/icons/plane.svg`, `../assets/icons/wallet.svg`, `../assets/icons/case.svg`]"
+            }'></include>
           </div>
         </div>
       </div>
