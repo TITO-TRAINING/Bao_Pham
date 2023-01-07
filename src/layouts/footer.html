@@ -1,0 +1,47 @@
+<section class="section-footer">
+  <div class="container">
+    <div class="footer-map">
+      <p>2300 W Arbutus Dr Citrus Springs, FL 34434, USA
+      </p>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom_content">
+        <div class="footer_content_top">
+          <div class="footer_contact">
+            <p class="uppercase">contact us</p>
+            <include src="./components/list.html" locals='{
+              "list": "[`2300 W Arbutus Dr Citrus Springs FL 34434, USA`, `+235 793-891-7938`, `contact@hofmannui.net`]"
+            }'></include>
+          </div>
+          <div class="footer_follow">
+            <p class="uppercase">follow us</p>
+            <include src="./components/listIcon.html" locals='{
+              "list": "[`../assets/icons/pinterest.svg`, `../assets/icons/twitter.svg`, `../assets/icons/facebook.svg`]"
+            }'></include>
+          </div>
+          <div class="footer_about">
+            <p class="uppercase">about us</p>
+            <include src="./components/list.html" locals='{
+              "list": "[`Hoffman UI Kit was made to help you quickly create beautiful layouts of responsive websites.`]"
+            }'></include>
+          </div>
+        </div>
+        <hr>
+        <div class="footer_content_bottom">
+          <div class="footer_year">
+            <p>© 2016 Hofmann UI Kit</p>
+          </div>
+          <div class="footer_nav">
+            <include src="./components/list.html" locals='{
+              "list": "[`home`, `services`, `team`, `portfolio`, `contact`]"
+            }'></include>
+          </div>
+          <div class="footer_arrow">
+            <p>To the Top</p>
+            <img src="../assets/icons/next.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
