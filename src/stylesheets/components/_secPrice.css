@@ -16,3 +16,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.875rem;
 }
+
+@media screen and (max-width: 541px) {
+  .price-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

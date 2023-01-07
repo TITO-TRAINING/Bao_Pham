@@ -52,7 +52,10 @@ ol {
 
 .gird {
   display: grid;
-  padding: 3.3125rem 11.375rem 5rem;
+  width: 90%;
+  margin: auto;
+  padding-top: 3.3125rem;
+  padding-bottom: 5rem;
 }
 
 .card {

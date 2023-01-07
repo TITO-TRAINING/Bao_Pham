@@ -53,3 +53,69 @@
   );
   background-blend-mode: soft-light;
 }
+
+@media screen and (max-width: 818px) and (min-width: 542px) {
+  .card-title {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .currency,
+  .card-detail {
+    font-size: 0.6875rem;
+  }
+
+  .card-detail {
+    margin-bottom: 1rem;
+  }
+
+  .card-time {
+    margin-bottom: 0.5rem;
+  }
+
+  .price {
+    font-size: 2.25rem;
+  }
+
+  .btn {
+    width: 8.75rem;
+    height: 2.5rem;
+  }
+
+  .btn-card {
+    font-size: 0.6875rem;
+  }
+}
+
+@media screen and (max-width: 541px) {
+  .card-title {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .currency,
+  .card-detail {
+    font-size: 0.6875rem;
+  }
+
+  .card-detail {
+    margin-bottom: 1rem;
+  }
+
+  .card-time {
+    margin-bottom: 0.5rem;
+  }
+
+  .price {
+    font-size: 2.25rem;
+  }
+
+  .btn {
+    height: 2rem;
+    line-height: 3px;
+  }
+
+  .btn-card {
+    font-size: 0.6875rem;
+  }
+}

@@ -10,3 +10,25 @@
 .member-slogan {
   margin-top: 1rem;
 }
+
+@media screen and (max-width: 818px) and (min-width: 542px) {
+  .member-name {
+    font-size: 12px;
+  }
+
+  .member-position,
+  .member-slogan {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 541px) {
+  .member-name {
+    font-size: 12px;
+  }
+
+  .member-position,
+  .member-slogan {
+    font-size: 11px;
+  }
+}
