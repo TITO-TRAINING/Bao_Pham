@@ -1,4 +1,25 @@
-body {
+:root {
+  --text-color-primary: #ebcb80;
+  --text-color-binary: #4b4b4b;
+  --text-color-third: #ffffff;
+  --bg-color: #4b4b4b;
+  --spacing-letter: 0.0555556em;
+  --font-size-title: 44px;
+  --font-size-subtitle: 16px;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+html {
+  font-family: Roboto;
+}
+
+body,
+p,
+a {
   margin: 0;
   padding: 0;
 }
@@ -10,4 +31,57 @@ a {
 ul,
 ol {
   list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 198px;
+  height: 48px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--font-size-subtitle);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 37px;
+}
+
+.gird {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  padding-top: 3.3125rem;
+  padding-bottom: 5rem;
+}
+
+.card {
+  text-align: center;
+  border-radius: 8px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.25rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.text-color_primary {
+  color: var(--text-color-primary);
+}
+
+.text-color_binary {
+  color: var(--text-color-binary);
+}
+
+.text-color_third {
+  color: var(--text-color-third);
+}
+
+.btn-bg_primary {
+  background-color: var(--text-color-primary);
+}
+
+.btn-bg_binary {
+  background-color: var(--text-color-binary);
 }
