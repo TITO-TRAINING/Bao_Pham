@@ -1,0 +1,11 @@
+@import url('../components/_member.css');
+
+.team-title {
+  padding-top: 3.375rem;
+  margin-bottom: 0;
+}
+
+.team-list {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4.625rem 1.875rem;
+}

@@ -1,0 +1,12 @@
+.list-member {
+  display: flex;
+}
+
+.list-member figure {
+  margin: 0;
+  padding-right: 1rem;
+}
+
+.member-slogan {
+  margin-top: 1rem;
+}

@@ -1,0 +1,55 @@
+.card-title {
+  font-size: 18px;
+  margin-bottom: 2.25rem;
+}
+
+.price {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  display: inline-block;
+}
+
+.currency {
+  font-size: 1.5rem;
+  display: inline-block;
+  transform: translateY(-1.5rem);
+}
+
+.card-time {
+  margin-bottom: 1.4375rem;
+}
+
+.card-detail {
+  margin-bottom: 1.875rem;
+}
+
+.card-detail p {
+  padding: 0.25rem;
+}
+
+.btn-card {
+  border: none;
+}
+
+.bg-card_primary {
+  background: #ebcb80;
+  background-blend-mode: soft-light;
+}
+
+.bg-card_binary {
+  background: linear-gradient(
+    223.49deg,
+    rgba(0, 0, 0, 0.0001) 4.85%,
+    rgba(0, 0, 0, 0.401127) 96.5%
+  );
+  background-blend-mode: multiply;
+}
+
+.bg-card_third {
+  background: linear-gradient(
+    224.09deg,
+    rgba(255, 255, 255, 0.7) -100%,
+    rgba(255, 255, 255, 7e-5)
+  );
+  background-blend-mode: soft-light;
+}
