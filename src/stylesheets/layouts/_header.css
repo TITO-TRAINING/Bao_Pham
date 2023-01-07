@@ -1,0 +1,135 @@
+@import url('../_reset.css');
+
+.header_top {
+  width: 100%;
+  padding: 2.4375rem 0;
+  display: flex;
+  justify-content: space-around;
+  background: var(--bg-color);
+}
+
+.header_top-logo {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: var(--text-color-primary);
+  display: flex;
+  align-items: center;
+}
+
+.header_top-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header_top-navigation a {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: var(--text-color-third);
+  letter-spacing: var(--spacing-letter);
+  line-height: 0;
+}
+
+ul .item {
+  margin: 0 1.375rem;
+  text-align: center;
+}
+
+.item:last-child {
+  padding: 1rem 1.5625rem;
+  border: 2px solid var(--text-color-third);
+  border-radius: 3.125rem;
+  margin-right: 0;
+}
+
+.header_top-navigation .item {
+  display: inline-block;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.header_bottom {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--text-color-primary);
+  opacity: 0.3;
+}
+
+.header_bottom-main {
+  padding: 10rem 0;
+  background: url('../../assets/images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_bottom-main .content {
+  z-index: 1;
+}
+
+.title {
+  font-weight: 400;
+  font-size: var(--font-size-title);
+  font-style: normal;
+  color: var(--text-color-binary);
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.subtitle {
+  font-weight: 400;
+  color: var(--text-color-binary);
+  font-size: var(--font-size-subtitle);
+  text-align: center;
+  margin-bottom: 2.1875rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.input-email {
+  padding-right: 6rem;
+  border: 2px solid var(--bg-color);
+  border-radius: 0.25rem;
+  background: none;
+  margin: 0 0.875rem;
+}
+
+.btn-submit {
+  background: none;
+  height: 3rem;
+  font-size: 16px;
+  border: 2px solid var(--text-color-binary);
+  margin: 0 0.875rem;
+  color: var(--text-color-binary);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.icon div {
+  padding: 1.25rem;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  margin: 0 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
