@@ -1,16 +1,13 @@
 <header>
   <div class="container">
-    <div class="header_top">
+    <div class="header_top letter-spacing">
       <p class="header_top-logo">
         hofmann
       </p>
       <nav class="header_top-navigation">
-        <ul>
-          <li class="item"><a href="">mission</a></li>
-          <li class="item"><a href="">services</a></li>
-          <li class="item"><a href="">about</a></li>
-          <li class="item"><a href="">take a tour</a></li>
-        </ul>
+        <include src="./components/list.html" locals='{
+          "list": "[`mission`, `services`, `about`, `take a tour`]"
+        }'></include>
       </nav>
       <div class="hamburger-menu">
         <img src="../assets/icons/hamburger-menu.svg" alt="hamburger">
@@ -27,15 +24,9 @@
             <button type="submit" class="btn btn-submit">find now</button>
           </form>
           <div class="icon">
-            <div class="icon-plane">
-              <img src="../assets/icons/plane.svg" alt="Plane">
-            </div>
-            <div class="icon-wallet">
-              <img src="../assets/icons/wallet.svg" alt="Wallet">
-            </div>
-            <div class="icon-case">
-              <img src="../assets/icons/case.svg" alt="Case">
-            </div>
+            <include src="./components/listIcon.html" locals='{
+              "list": "[`../assets/icons/plane.svg`, `../assets/icons/wallet.svg`, `../assets/icons/case.svg`]"
+            }'></include>
           </div>
         </div>
       </div>
