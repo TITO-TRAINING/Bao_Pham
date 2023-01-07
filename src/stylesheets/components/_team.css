@@ -1,0 +1,23 @@
+@import url('../components/_member.css');
+
+.team-title {
+  padding-top: 3.375rem;
+  margin-bottom: 0;
+}
+
+.team-list {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4.625rem 1.875rem;
+}
+
+@media screen and (max-width: 818px) and (min-width: 542px) {
+  .team-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 541px) {
+  .team-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
