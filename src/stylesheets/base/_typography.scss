@@ -1,0 +1,33 @@
+@use '../abstracts/' as *;
+
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url(../assets/fonts/Gilroy/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(../assets/fonts/Gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(../assets/fonts/Gilroy/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-SemiBold;
+  src: url(../assets/fonts/Gilroy/Gilroy-SemiBold.ttf);
+}
+
+body {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: pxToRem(24);
+
+  @include tablet {
+    font-size: pxToRem(11);
+    line-height: pxToRem(16);
+  }
+}
