@@ -1,0 +1,57 @@
+<header id="header" class="header">
+  <div class="overlay"></div>
+  <div class="header-top">
+    <div class="header-top-left">
+      <div class="header-top__logo">
+        <img src="../assets/images/desktop/logo_header.png" alt="logo">
+      </div>
+      <div class="header-top__nav">
+        <nav>
+          <ul>
+            <include src="./components/nav.html" locals='{
+              "srcImg": "../assets/icons/desktop/nav1.svg",
+              "name": "Home"
+            }'></include>
+            <include src="./components/nav.html" locals='{
+              "srcImg": "../assets/icons/desktop/nav2.svg",
+              "name": "Movie"
+            }'></include>
+            <include src="./components/nav.html" locals='{
+              "srcImg": "../assets/icons/desktop/nav3.svg",
+              "name": "Drama"
+            }'></include>
+            <include src="./components/nav.html" locals='{
+              "srcImg": "../assets/icons/desktop/nav4.svg",
+              "name": "Music Video"
+            }'></include>
+            <include src="./components/nav.html" locals='{
+              "srcImg": "../assets/icons/desktop/nav5.svg",
+              "name": "Live Show"
+            }'></include>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header-top-right">
+      <div class="header-top__search">
+        <img src="../assets/icons/desktop/search.svg">
+      </div>
+      <div class="header-top__sign">
+        <button class="btn">Sign in</button>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <p class="header-bottom__welcome">Welcome to BD Screens</p>
+    <h1 class="header-bottom__download">Download Unlimited
+      Movies, Drama, Music Video
+      and More Content.</h1>
+    <p class="header-bottom__enjoy">Enjoy exclusive Music Video popular movies and Live shows.
+      Subscribe BD Screen now </p>
+    <div class="header-bottom__input">
+      <label for="">+880</label>
+      <input type="text" placeholder="Enter mobile number">
+      <button class="btn">Subscribe</button>
+    </div>
+  </div>
+</header>
