@@ -106,7 +106,8 @@
     "yaml": "^1.10.2"
   },
   "scripts": {
-    "dev": "parcel ./src/pages/index.html"
+    "dev": "parcel ./src/pages/index.html",
+    "build": "parcel build ./src/pages/index.html"
   },
   "repository": {
     "type": "git",
