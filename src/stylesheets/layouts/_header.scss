@@ -1,14 +1,11 @@
 @use '../abstracts/' as *;
 
-#header {
+.header {
   position: relative;
   background: url('../assets/images/desktop/BGheader.png');
   background-size: cover;
   background-position: center;
   background-color: $color-black-first;
-}
-
-.header {
   @include GilroyRegular;
   font-size: 16px;
   line-height: 20px;
