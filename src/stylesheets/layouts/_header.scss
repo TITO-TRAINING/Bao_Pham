@@ -1,2 +1,110 @@
 @use '../abstracts/' as *;
 
+.header {
+  position: relative;
+  background: url('../assets/images/desktop/BGheader.png');
+  background-size: cover;
+  background-position: center;
+  background-color: $color-black-first;
+  @include GilroyRegular;
+  font-size: 16px;
+  line-height: 20px;
+  padding: pxToRem(20) pxToRem(70);
+  &-top,
+  &-bottom {
+    position: relative;
+  }
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    &-left,
+    &-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__logo {
+      margin-right: pxToRem(65);
+      transform: translateY(6);
+    }
+    &__nav,
+    &__nav ul,
+    &__nav a {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      a {
+        margin-right: pxToRem(10);
+        color: $color-black-four;
+        img {
+          padding: pxToRem(5);
+        }
+      }
+    }
+    &__nav li {
+      &:first-child a {
+        color: $text-color-primary;
+      }
+    }
+    &-right > div {
+      margin-left: pxToRem(60);
+    }
+  }
+  &-bottom {
+    padding: 4rem 0;
+    &__welcome {
+      @include GilroyRegular;
+      font-size: 24px;
+      line-height: 32px;
+      padding-bottom: pxToRem(24);
+    }
+    &__download {
+      @include GilroyBold;
+      font-size: 64px;
+      line-height: 72px;
+      letter-spacing: $main-spacing;
+      padding-bottom: pxToRem(32);
+      max-width: pxToRem(720);
+    }
+    &__enjoy {
+      @include GilroyMedium;
+      font-size: 20px;
+      line-height: 32px;
+      padding-bottom: pxToRem(18);
+      max-width: pxToRem(600);
+    }
+    &__input {
+      position: relative;
+      display: flex;
+      max-width: pxToRem(500);
+      label {
+        position: absolute;
+        color: black;
+        transform: translate(10px, 10px);
+        border-right: 1px solid red;
+        padding: pxToRem(10);
+        padding-right: pxToRem(21);
+      }
+      input {
+        padding: pxToRem(20) 0 pxToRem(20) pxToRem(100);
+        flex-grow: 2;
+        outline: none;
+        border-radius: 3px 0 0 3px;
+        border: none;
+      }
+      button {
+        flex-grow: 1;
+        border-radius: 0 3px 3px 0;
+      }
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-overlay-linear-gradient;
+}
