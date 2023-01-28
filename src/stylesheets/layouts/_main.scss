@@ -1,0 +1,84 @@
+@use '../abstracts/' as *;
+
+section {
+  padding: pxToRem(48) pxToRem(70);
+}
+
+section.live {
+  background: $color-black-first;
+  .container__top {
+    display: flex;
+    justify-content: space-between;
+    &__icon {
+      display: flex;
+      align-items: center;
+      button {
+        line-height: 22px;
+        background: transparent;
+        color: $text-color-primary;
+      }
+    }
+  }
+  .container__bottom {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: pxToRem(367);
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .item {
+    display: flex;
+    &__img {
+      padding-right: 1rem;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      &__name {
+        @include GilroyRegular;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      &__follow {
+        margin-bottom: 0.8rem;
+        color: $color-black-four;
+      }
+      button {
+        border: 2px solid;
+        border-radius: 2px;
+        color: $branch-color-first;
+        padding: 0.2rem 0.4rem;
+        border-image-slice: 1;
+        border-image-source: $color-linear-gradient;
+        background: none;
+      }
+    }
+  }
+}
+
+section.popular,
+section.movies,
+section.musics {
+  background-color: $color-black-first;
+  .container__top {
+    display: flex;
+    justify-content: space-between;
+    &__icon {
+      display: flex;
+      align-items: center;
+      button {
+        line-height: 22px;
+        background: transparent;
+        color: $text-color-primary;
+      }
+    }
+  }
+  .cards {
+    @include cards;
+    grid-gap: 16px;
+  }
+}
