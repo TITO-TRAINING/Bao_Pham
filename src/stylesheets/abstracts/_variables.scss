@@ -1,9 +1,10 @@
-@use "functions" as *;
+@use 'functions' as *;
 
 // Font family
 $primary-font: Gilroy-Regular;
 $second-font: Gilroy-Bold;
 $third-font: Gilroy-SemiBold;
+$four-font: Gilroy-Medium;
 
 // Breakpoints
 
@@ -14,13 +15,20 @@ $mobile: calc($medium - 1px);
 $tablet: calc($extra-lager - 1px);
 
 // Colors
-$branch-color-first: #F41B3B;
-$branch-color-second: #1EBC99;
-$branch-color-third: #F9CC0D;
-$branch-color-four: #1884F7;
-$color-linear-gradient: linear-gradient(90deg, #F41B3B 0%, #1884F7 100%);
-$color-black-first: #0A070B;
+$branch-color-first: #f41b3b;
+$branch-color-second: #1ebc99;
+$branch-color-third: #f9cc0d;
+$branch-color-four: #1884f7;
+$color-linear-gradient: linear-gradient(90deg, #f41b3b 0%, #1884f7 100%);
+$color-overlay-linear-gradient: linear-gradient(
+  172.23deg,
+  #000000 4.94%,
+  rgba(0, 0, 0, 0.35) 45.74%,
+  rgba(0, 0, 0, 0.9) 92.94%
+);
+$color-black-first: #0a070b;
 $color-black-second: #363536;
-$color-black-third: #4F4E50;
-$color-black-four: #807E81;
+$color-black-third: #4f4e50;
+$color-black-four: #807e81;
+$text-color-primary: #ffffff;
 $main-spacing: pxToRem(-1.5);
