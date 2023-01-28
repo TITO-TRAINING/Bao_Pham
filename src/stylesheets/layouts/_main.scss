@@ -59,3 +59,24 @@ section.live {
     }
   }
 }
+
+section.popular {
+  background-color: $color-black-first;
+  .container__top {
+    display: flex;
+    justify-content: space-between;
+    &__icon {
+      display: flex;
+      align-items: center;
+      button {
+        line-height: 22px;
+        background: transparent;
+        color: $text-color-primary;
+      }
+    }
+  }
+  .cards {
+    @include cards;
+    grid-gap: 16px;
+  }
+}

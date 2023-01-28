@@ -43,6 +43,27 @@
   color: $text-color-primary;
 }
 
+@mixin cards {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    position: relative;
+    &__name {
+      @include GilroyRegular;
+      position: absolute;
+      bottom: 1rem;
+      left: pxToRem(12);
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
 //class
 .btn {
   @include btn;
