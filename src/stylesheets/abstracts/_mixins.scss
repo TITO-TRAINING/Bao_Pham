@@ -49,6 +49,13 @@
   border: none;
 }
 
+.container__top__subtitle {
+  @include GilroyBold;
+  font-size: 32px;
+  line-height: 40px;
+  padding-bottom: pxToRem(46);
+}
+
 .display-block {
   display: block;
 }
