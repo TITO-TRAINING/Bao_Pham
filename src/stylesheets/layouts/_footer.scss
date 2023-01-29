@@ -1,0 +1,93 @@
+@use '../abstracts/' as *;
+
+footer {
+  background-color: $color-black-first;
+  border-top: 5px solid $color-black-third;
+  padding: pxToRem(67) 0;
+  @include mobile {
+    padding: pxToRem(14) 0;
+  }
+  .container__footer {
+    position: relative;
+    .footer__icon--arrow {
+      position: absolute;
+      right: 0;
+      padding: pxToRem(11) pxToRem(13);
+      border-radius: 4px 0 0 4px;
+      background-color: $branch-color-first;
+      @include mobile {
+        display: none;
+      }
+    }
+    .footer__top {
+      text-align: center;
+      padding-top: 5rem;
+      @include mobile {
+        padding-top: pxToRem(32);
+        padding-bottom: pxToRem(44);
+      }
+    }
+    .footer__center {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      @include GilroyRegular;
+      font-size: 18px;
+      line-height: 24px;
+      padding: 0 pxToRem(20) pxToRem(53);
+      @include mobile {
+        font-size: 14px;
+        padding: 0 pxToRem(20) pxToRem(43);
+      }
+      &--services {
+        margin-bottom: pxToRem(33);
+        li {
+          padding: 0 pxToRem(56);
+          @include mobile {
+            padding: 0 pxToRem(53);
+          }
+        }
+        li:last-child {
+          border: none;
+        }
+        @include mobile {
+          li:first-child {
+            padding-left: 0;
+          }
+          li:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+      &--media {
+        li {
+          padding: 0 pxToRem(25);
+        }
+        li:first-child {
+          border: none;
+          transform: translateY(-50%);
+          text-transform: uppercase;
+          color: $color-black-four;
+          @include mobile {
+            transform: translateY(-25%);
+          }
+        }
+        li:last-child {
+          border: none;
+        }
+      }
+      ul li {
+        border-right: 1px solid $color-black-third;
+        display: inline-block;
+      }
+    }
+    .footer__bottom {
+      text-align: center;
+      padding-bottom: pxToRem(10);
+      font-size: 16px;
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+}
