@@ -10,7 +10,11 @@
   font-size: 16px;
   line-height: 20px;
   padding: pxToRem(20) pxToRem(70);
+  @include mobile {
+    padding: pxToRem(20);
+  }
   &-top,
+  &-top--mobile,
   &-bottom {
     position: relative;
   }
@@ -33,6 +37,9 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
+      @include mobile {
+        display: none;
+      }
       a {
         margin-right: pxToRem(10);
         color: $color-black-four;
@@ -41,6 +48,7 @@
         }
       }
     }
+    &--mobile li,
     &__nav li {
       &:first-child a {
         color: $text-color-primary;
@@ -50,6 +58,39 @@
       margin-left: pxToRem(60);
     }
   }
+  hr {
+    display: none;
+    padding: pxToRem(2);
+    background-color: $color-black-four;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: pxToRem(63);
+    @include mobile {
+      display: block;
+    }
+  }
+  .header-top--mobile {
+    display: none;
+    padding-top: 2.5rem;
+    @include mobile {
+      display: block;
+      nav,
+      ul,
+      a {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
+      a {
+        margin-right: pxToRem(10);
+        color: $color-black-four;
+        img {
+          padding: pxToRem(5);
+        }
+      }
+    }
+  }
   &-bottom {
     padding: 4rem 0;
     &__welcome {
@@ -57,6 +98,12 @@
       font-size: 24px;
       line-height: 32px;
       padding-bottom: pxToRem(24);
+      @include mobile {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        padding-bottom: pxToRem(48);
+      }
     }
     &__download {
       @include GilroyBold;
@@ -65,6 +112,11 @@
       letter-spacing: $main-spacing;
       padding-bottom: pxToRem(32);
       max-width: pxToRem(720);
+      @include mobile {
+        font-size: 24px;
+        line-height: 32px;
+        max-width: pxToRem(284);
+      }
     }
     &__enjoy {
       @include GilroyMedium;
@@ -72,10 +124,16 @@
       line-height: 32px;
       padding-bottom: pxToRem(18);
       max-width: pxToRem(600);
+      @include mobile {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: pxToRem(281);
+      }
     }
     &__input {
       position: relative;
       display: flex;
+      flex-wrap: wrap;
       max-width: pxToRem(500);
       label {
         position: absolute;
@@ -84,6 +142,11 @@
         border-right: 1px solid red;
         padding: pxToRem(10);
         padding-right: pxToRem(21);
+        @include mobile {
+          font-size: 14px;
+          padding: pxToRem(8);
+          transform: translate(5px, 5px);
+        }
       }
       input {
         padding: pxToRem(20) 0 pxToRem(20) pxToRem(100);
@@ -91,10 +154,20 @@
         outline: none;
         border-radius: 3px 0 0 3px;
         border: none;
+        @include mobile {
+          padding: pxToRem(15) 0 pxToRem(15) pxToRem(80);
+          margin-bottom: 1rem;
+          border-radius: 3px;
+        }
       }
       button {
         flex-grow: 1;
         border-radius: 0 3px 3px 0;
+        @include mobile {
+          padding: pxToRem(10) pxToRem(24);
+          border-radius: 3px;
+          margin-bottom: 1rem;
+        }
       }
     }
   }
