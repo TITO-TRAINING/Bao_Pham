@@ -92,6 +92,9 @@ section.live {
     display: flex;
     align-items: center;
     margin-right: pxToRem(70);
+    @include mobile {
+      margin-right: pxToRem(20);
+    }
     button {
       border: none;
       font-size: 14px;
