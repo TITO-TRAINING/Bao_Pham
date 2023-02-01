@@ -1,37 +1,47 @@
 @use '../abstracts/' as *;
 
-section {
-  padding: pxToRem(48) pxToRem(70);
+main {
+  background-color: $color-black-first;
+  padding: pxToRem(35) 0 pxToRem(70) pxToRem(70);
+  @include mobile {
+    padding: pxToRem(20) 0 pxToRem(20) pxToRem(20);
+  }
+  section.section {
+    background-color: $color-black-first;
+    padding-bottom: pxToRem(85);
+    @include mobile {
+      padding-bottom: pxToRem(32);
+    }
+  }
 }
 
 section.live {
-  background: $color-black-first;
-  .container__top {
-    display: flex;
-    justify-content: space-between;
-    &__icon {
-      display: flex;
-      align-items: center;
-      button {
-        line-height: 22px;
-        background: transparent;
-        color: $text-color-primary;
-      }
-    }
-  }
   .container__bottom {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: pxToRem(367);
     overflow-x: auto;
+    padding-top: pxToRem(46);
     &::-webkit-scrollbar {
       display: none;
+    }
+    @include mobile {
+      grid-auto-columns: pxToRem(176);
+      padding-top: 1rem;
     }
   }
   .item {
     display: flex;
+    @include mobile {
+      flex-direction: column;
+    }
     &__img {
       padding-right: 1rem;
+      @include mobile {
+        img {
+          width: 100%;
+        }
+      }
     }
     &__content {
       display: flex;
@@ -42,12 +52,23 @@ section.live {
         @include GilroyRegular;
         font-size: 20px;
         line-height: 30px;
+        @include mobile {
+          font-size: 14px;
+          line-height: 18px;
+        }
       }
       &__follow {
+        font-size: 14px;
+        line-height: 20px;
         margin-bottom: 0.8rem;
         color: $color-black-four;
+        @include mobile {
+          font-size: 12px;
+        }
       }
       button {
+        font-size: 14px;
+        line-height: 18px;
         border: 2px solid;
         border-radius: 2px;
         color: $branch-color-first;
@@ -55,7 +76,31 @@ section.live {
         border-image-slice: 1;
         border-image-source: $color-linear-gradient;
         background: none;
+        @include mobile {
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
+    }
+  }
+}
+
+.container__top {
+  display: flex;
+  justify-content: space-between;
+  &__icon {
+    display: flex;
+    align-items: center;
+    margin-right: pxToRem(70);
+    button {
+      border: none;
+      font-size: 14px;
+      line-height: 22px;
+      background: transparent;
+      color: $text-color-primary;
+    }
+    figure {
+      display: flex;
     }
   }
 }
@@ -63,22 +108,38 @@ section.live {
 section.popular,
 section.movies,
 section.musics {
-  background-color: $color-black-first;
-  .container__top {
-    display: flex;
-    justify-content: space-between;
-    &__icon {
-      display: flex;
-      align-items: center;
-      button {
-        line-height: 22px;
-        background: transparent;
-        color: $text-color-primary;
-      }
-    }
-  }
   .cards {
     @include cards;
     grid-gap: 16px;
+  }
+}
+
+section.popular {
+  .cards {
+    @include mobile {
+      grid-auto-columns: pxToRem(101);
+      img {
+        width: 100%;
+      }
+      .card__name {
+        font-size: 11px;
+        line-height: 12px;
+      }
+    }
+  }
+}
+section.movies,
+section.musics {
+  .cards {
+    @include mobile {
+      grid-auto-columns: pxToRem(277);
+      img {
+        width: 100%;
+      }
+      .card__name {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
   }
 }

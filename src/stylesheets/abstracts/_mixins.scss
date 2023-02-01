@@ -42,8 +42,8 @@
   background-color: $branch-color-first;
   color: $text-color-primary;
   @include mobile {
-  padding: pxToRem(6) pxToRem(18);
-  font-size: 12px;
+    padding: pxToRem(6) pxToRem(18);
+    font-size: 12px;
   }
 }
 
@@ -52,6 +52,10 @@
   grid-auto-flow: column;
   grid-auto-columns: auto;
   overflow-x: auto;
+  padding-top: pxToRem(40);
+  @include mobile {
+    padding-top: 1rem;
+  }
   &::-webkit-scrollbar {
     display: none;
   }
@@ -78,7 +82,10 @@
   @include GilroyBold;
   font-size: 32px;
   line-height: 40px;
-  padding-bottom: pxToRem(46);
+  @include mobile {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .display-block {
