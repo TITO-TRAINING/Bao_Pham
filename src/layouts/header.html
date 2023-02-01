@@ -3,9 +3,10 @@
   <div class="header-top">
     <div class="header-top-left">
       <div class="header-top__logo">
-        <figure>
-          <img src="../assets/images/desktop/logo_header.png" alt="logo">
-        </figure>
+        <picture>
+          <source media="(min-width: 768px)" srcset="../assets/images/desktop/logo_header.png">
+          <img src="../assets/images/mobile/logo_header.png">
+        </picture>
       </div>
       <div class="header-top__nav">
         <nav>
@@ -44,6 +45,33 @@
         <button class="btn">Sign in</button>
       </div>
     </div>
+  </div>
+  <hr>
+  <div class="header-top--mobile">
+    <nav>
+      <ul>
+        <include src="./components/nav.html" locals='{
+          "srcImg": "../assets/icons/desktop/nav1.svg",
+          "name": "Home"
+        }'></include>
+        <include src="./components/nav.html" locals='{
+          "srcImg": "../assets/icons/desktop/nav2.svg",
+          "name": "Movie"
+        }'></include>
+        <include src="./components/nav.html" locals='{
+          "srcImg": "../assets/icons/desktop/nav3.svg",
+          "name": "Drama"
+        }'></include>
+        <include src="./components/nav.html" locals='{
+          "srcImg": "../assets/icons/desktop/nav4.svg",
+          "name": "Music Video"
+        }'></include>
+        <include src="./components/nav.html" locals='{
+          "srcImg": "../assets/icons/desktop/nav5.svg",
+          "name": "Live Show"
+        }'></include>
+      </ul>
+    </nav>
   </div>
   <div class="header-bottom">
     <p class="header-bottom__welcome">Welcome to BD Screens</p>

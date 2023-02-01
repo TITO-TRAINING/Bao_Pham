@@ -41,6 +41,10 @@
   border-radius: 3px;
   background-color: $branch-color-first;
   color: $text-color-primary;
+  @include mobile {
+  padding: pxToRem(6) pxToRem(18);
+  font-size: 12px;
+  }
 }
 
 @mixin cards {
