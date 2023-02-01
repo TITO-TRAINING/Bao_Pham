@@ -60,7 +60,9 @@ section.live {
   }
 }
 
-section.popular {
+section.popular,
+section.movies,
+section.musics {
   background-color: $color-black-first;
   .container__top {
     display: flex;
