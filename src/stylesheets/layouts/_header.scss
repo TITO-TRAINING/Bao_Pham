@@ -50,17 +50,22 @@
     }
     &--mobile li,
     &__nav li {
+      white-space: nowrap;
       &:first-child a {
         color: $text-color-primary;
       }
     }
     &-right > div {
       margin-left: pxToRem(60);
+      @include mobile {
+        margin-left: 1rem;
+      }
     }
   }
   hr {
     display: none;
     padding: pxToRem(2);
+    border: none;
     background-color: $color-black-four;
     width: 100%;
     position: absolute;
