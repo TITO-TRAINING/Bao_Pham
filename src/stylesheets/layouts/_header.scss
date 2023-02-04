@@ -26,6 +26,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      button {
+        margin-left: pxToRem(60);
+        @include mobile {
+          margin-left: pxToRem(20);
+        }
+      }
     }
     &__logo {
       margin-right: pxToRem(65);
@@ -53,9 +59,6 @@
       &:first-child a {
         color: $text-color-primary;
       }
-    }
-    &-right > div {
-      margin-left: pxToRem(60);
     }
   }
   hr {
@@ -164,6 +167,7 @@
         flex-grow: 1;
         border-radius: 0 3px 3px 0;
         @include mobile {
+          flex-grow: 0;
           padding: pxToRem(10) pxToRem(24);
           border-radius: 3px;
           margin-bottom: 1rem;
