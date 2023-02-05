@@ -76,6 +76,7 @@
 .btn {
   @include btn;
   border: none;
+  white-space: nowrap;
 }
 
 .container__top__subtitle {
