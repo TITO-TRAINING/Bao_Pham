@@ -10,6 +10,7 @@
   font-size: 16px;
   line-height: 20px;
   padding: pxToRem(20) pxToRem(70);
+  overflow: hidden;
   @include mobile {
     padding: pxToRem(20);
   }

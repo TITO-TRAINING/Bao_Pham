@@ -1,8 +1,10 @@
-<li>
-  <a href="javascript:void(0)">
-    <figure>
-      <img src="{{srcImg}}" alt="{{name}}">
-    </figure>
-    <p>{{name}}</p>
-  </a>
-</li>
+<each loop="value in {{items}}">
+  <li>
+    <a href="javascript:void(0)">
+      <figure>
+        <img src="{{value.icon}}" alt="{{value.name}}">
+      </figure>
+      <p>{{value.name}}</p>
+    </a>
+  </li>
+</each>
