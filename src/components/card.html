@@ -1,6 +1,8 @@
-<div class="card">
-  <picture>
-    <img src="{{srcImg}}" alt="{{name}}" loading="lazy">
-  </picture>
-  <p class="card__name">{{name}}</p>
-</div>
+<each loop="card in {{cards}}">
+  <div class="card">
+    <picture>
+      <img src="{{card.srcImg}}" alt="{{card.name}}" loading="lazy">
+    </picture>
+    <p class="card__name">{{card.name}}</p>
+  </div>
+</each>
