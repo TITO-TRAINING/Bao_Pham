@@ -143,33 +143,41 @@
       }
     }
     &__input {
-      position: relative;
       display: flex;
       flex-wrap: wrap;
+      gap: 1rem 0;
       max-width: pxToRem(500);
-      label {
-        position: absolute;
-        color: black;
-        transform: translate(pxToRem(10), pxToRem(10));
-        border-right: 1px solid red;
-        padding: pxToRem(10);
-        padding-right: pxToRem(21);
-        @include mobile {
-          font-size: pxToRem(14);
-          padding: pxToRem(8);
-          transform: translate(pxToRem(5), pxToRem(5));
-        }
+      @include mobile {
+        gap: 1rem;
       }
-      input {
-        padding: pxToRem(20) 0 pxToRem(20) pxToRem(100);
+      div {
+        position: relative;
         flex-grow: 2;
-        outline: none;
-        border-radius: 3px 0 0 3px;
-        border: none;
-        @include mobile {
-          padding: pxToRem(15) 0 pxToRem(15) pxToRem(80);
-          margin-bottom: 1rem;
-          border-radius: 3px;
+        label {
+          position: absolute;
+          top: 50%;
+          left: 2%;
+          transform: translateY(-50%);
+          border-right: 1px solid red;
+          padding: pxToRem(10);
+          padding-right: pxToRem(21);
+          color: black;
+          @include mobile {
+            font-size: pxToRem(14);
+            padding: pxToRem(8);
+            // transform: translate(pxToRem(5), pxToRem(5));
+          }
+        }
+        input {
+          width: 100%;
+          padding: pxToRem(20) 0 pxToRem(20) pxToRem(100);
+          outline: none;
+          border-radius: 3px 0 0 3px;
+          border: none;
+          @include mobile {
+            padding: pxToRem(15) 0 pxToRem(15) pxToRem(80);
+            border-radius: 3px;
+          }
         }
       }
       button {
@@ -179,7 +187,6 @@
           flex-grow: 0;
           padding: pxToRem(17) pxToRem(42);
           border-radius: 3px;
-          margin-bottom: 1rem;
         }
       }
     }
