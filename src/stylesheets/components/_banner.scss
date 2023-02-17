@@ -1,0 +1,113 @@
+@use '../abstracts/' as *;
+
+.banner {
+  position: relative;
+  z-index: -1;
+  background: url('../assets/images/desktop/BGheader.png');
+  background-color: $color-black-first;
+  background-size: cover;
+  background-position: center;
+  @include GilroyRegular;
+  font-size: pxToRem(16);
+  line-height: pxToRem(20);
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color-overlay-linear-gradient;
+  }
+  .container {
+    position: relative;
+    padding-top: 64px;
+    @include mobile {
+      border-top: 5px solid $color-black-second;
+    }
+  }
+  padding: 4rem 0;
+  &__welcome {
+    @include GilroyRegular;
+    font-size: pxToRem(24);
+    line-height: pxToRem(32);
+    padding-bottom: 24px;
+    @include mobile {
+      font-size: pxToRem(16);
+      line-height: pxToRem(16);
+      text-align: center;
+      padding-bottom: 48px;
+    }
+  }
+  &__download {
+    @include GilroyBold;
+    font-size: pxToRem(64);
+    line-height: pxToRem(72);
+    letter-spacing: $main-spacing;
+    padding-bottom: 32px;
+    max-width: 720px;
+    @include mobile {
+      font-size: pxToRem(24);
+      line-height: pxToRem(32);
+      max-width: 284px;
+    }
+  }
+  &__enjoy {
+    @include GilroyMedium;
+    font-size: pxToRem(20);
+    line-height: pxToRem(32);
+    padding-bottom: 18px;
+    max-width: 600px;
+    @include mobile {
+      font-size: pxToRem(14);
+      line-height: pxToRem(18);
+      max-width: 281px;
+    }
+  }
+  &__input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 0;
+    max-width: 500px;
+    @include mobile {
+      gap: 16px;
+    }
+    div {
+      position: relative;
+      flex-grow: 2;
+      label {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        transform: translateY(-50%);
+        border-right: 1px solid red;
+        padding: 10px;
+        padding-right: 21px;
+        color: black;
+        @include mobile {
+          font-size: pxToRem(14);
+          padding: 8px;
+        }
+      }
+      input {
+        width: 100%;
+        padding: pxToRem(20) 0 pxToRem(20) pxToRem(100);
+        outline: none;
+        border-radius: 3px 0 0 3px;
+        border: none;
+        @include mobile {
+          padding: pxToRem(15) 0 pxToRem(15) pxToRem(80);
+          border-radius: 3px;
+        }
+      }
+    }
+    button {
+      flex-grow: 1;
+      border-radius: 0 3px 3px 0;
+      @include mobile {
+        flex-grow: 0;
+        padding: pxToRem(17) pxToRem(42);
+        border-radius: 3px;
+      }
+    }
+  }
+}

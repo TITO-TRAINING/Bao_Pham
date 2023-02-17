@@ -1,14 +1,13 @@
 <header id="header" class="header">
-  <div class="overlay"></div>
-  <div class="header-top">
-    <div class="header-top-left">
-      <div class="header-top__logo">
+  <div class="container">
+    <div class="header__left">
+      <div class="header__left--logo">
         <picture>
           <source media="(min-width: 768px)" srcset="../assets/images/desktop/logo_header.png">
           <img src="../assets/images/mobile/logo_header.png" alt="logo">
         </picture>
       </div>
-      <div class="header-top__nav">
+      <div class="header__left--nav">
         <nav>
           <ul>
             <include src="./components/nav.html" locals='{
@@ -18,36 +17,12 @@
         </nav>
       </div>
     </div>
-    <div class="header-top-right">
+    <div class="header__right">
       <figure>
         <img src="../assets/icons/desktop/search.svg" alt="search">
       </figure>
       <button class="btn">Sign in</button>
     </div>
   </div>
-  <hr>
-  <div class="header-top--mobile">
-    <nav>
-      <ul>
-        <include src="./components/nav.html" locals='{
-          "items": "[{icon: `../assets/icons/desktop/nav1.svg`, name: `Home`}, {icon: `../assets/icons/desktop/nav2.svg`, name: `Movie`}, {icon: `../assets/icons/desktop/nav3.svg`, name: `Drama`},{icon: `../assets/icons/desktop/nav4.svg`, name: `Music Video`},{icon: `../assets/icons/desktop/nav5.svg`, name: `Live Show`}]"
-        }'></include>
-      </ul>
-    </nav>
-  </div>
-  <div class="header-bottom">
-    <p class="header-bottom__welcome">Welcome to BD Screens</p>
-    <h1 class="header-bottom__download">Download Unlimited
-      Movies, Drama, Music Video
-      and More Content.</h1>
-    <p class="header-bottom__enjoy">Enjoy exclusive Music Video popular movies and Live shows.
-      Subscribe BD Screen now </p>
-    <div class="header-bottom__input">
-      <div>
-        <label for="">+880</label>
-        <input type="text" placeholder="Enter mobile number">
-      </div>
-      <button class="btn">Subscribe</button>
-    </div>
-  </div>
 </header>
+<include src="./components/banner.html"></include>

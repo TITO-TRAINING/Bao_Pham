@@ -1,203 +1,39 @@
 @use '../abstracts/' as *;
 
 .header {
-  position: relative;
-  background: url('../assets/images/desktop/BGheader.png');
-  background-size: cover;
-  background-position: center;
-  background-color: $color-black-first;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
   @include GilroyRegular;
   font-size: pxToRem(16);
   line-height: pxToRem(20);
-  padding: pxToRem(20) pxToRem(70);
+  padding: 20px 0;
   overflow: hidden;
-  @include mobile {
-    padding: pxToRem(20);
-  }
-  &-top,
-  &-top--mobile,
-  &-bottom {
+  .container {
     position: relative;
-  }
-  &-top {
     display: flex;
     justify-content: space-between;
-    &-left,
-    &-right {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      button {
-        margin-left: pxToRem(60);
-        @include mobile {
-          margin-left: pxToRem(20);
-        }
-      }
-    }
-    &__logo {
-      margin-right: pxToRem(65);
-      transform: translateY(6);
-    }
-    &__nav,
-    &__nav ul,
-    &__nav a {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      @include mobile {
-        display: none;
-      }
-      a {
-        margin-right: pxToRem(10);
-        color: $color-black-four;
-        img {
-          padding: pxToRem(5);
-        }
-      }
-    }
-    &--mobile li,
-    &__nav li {
-      white-space: nowrap;
-      &:first-child a {
-        color: $text-color-primary;
-      }
-    }
-    &-right > div {
-      margin-left: pxToRem(60);
-      @include mobile {
-        margin-left: 1rem;
-      }
-    }
   }
-  hr {
-    display: none;
-    padding: pxToRem(2);
-    border: none;
-    background-color: $color-black-four;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: pxToRem(63);
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__left {
+    gap: 24px 65px;
+  }
+  &__right {
+    gap: 60px;
     @include mobile {
-      display: block;
+      gap: 20px;
+      position: absolute;
+      right: 20px;
     }
   }
-  .header-top--mobile {
-    display: none;
-    padding-top: 2.5rem;
+  &__left {
     @include mobile {
-      display: block;
-      nav,
-      ul,
-      a {
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
-      }
-      a {
-        margin-right: pxToRem(10);
-        color: $color-black-four;
-        img {
-          padding: pxToRem(5);
-        }
-      }
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
-  &-bottom {
-    padding: 4rem 0;
-    &__welcome {
-      @include GilroyRegular;
-      font-size: pxToRem(24);
-      line-height: pxToRem(32);
-      padding-bottom: pxToRem(24);
-      @include mobile {
-        font-size: pxToRem(16);
-        line-height: pxToRem(16);
-        text-align: center;
-        padding-bottom: pxToRem(48);
-      }
-    }
-    &__download {
-      @include GilroyBold;
-      font-size: pxToRem(64);
-      line-height: pxToRem(72);
-      letter-spacing: $main-spacing;
-      padding-bottom: pxToRem(32);
-      max-width: pxToRem(720);
-      @include mobile {
-        font-size: pxToRem(24);
-        line-height: pxToRem(32);
-        max-width: pxToRem(284);
-      }
-    }
-    &__enjoy {
-      @include GilroyMedium;
-      font-size: pxToRem(20);
-      line-height: pxToRem(32);
-      padding-bottom: pxToRem(18);
-      max-width: pxToRem(600);
-      @include mobile {
-        font-size: pxToRem(14);
-        line-height: pxToRem(18);
-        max-width: pxToRem(281);
-      }
-    }
-    &__input {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem 0;
-      max-width: pxToRem(500);
-      @include mobile {
-        gap: 1rem;
-      }
-      div {
-        position: relative;
-        flex-grow: 2;
-        label {
-          position: absolute;
-          top: 50%;
-          left: 2%;
-          transform: translateY(-50%);
-          border-right: 1px solid red;
-          padding: pxToRem(10);
-          padding-right: pxToRem(21);
-          color: black;
-          @include mobile {
-            font-size: pxToRem(14);
-            padding: pxToRem(8);
-            // transform: translate(pxToRem(5), pxToRem(5));
-          }
-        }
-        input {
-          width: 100%;
-          padding: pxToRem(20) 0 pxToRem(20) pxToRem(100);
-          outline: none;
-          border-radius: 3px 0 0 3px;
-          border: none;
-          @include mobile {
-            padding: pxToRem(15) 0 pxToRem(15) pxToRem(80);
-            border-radius: 3px;
-          }
-        }
-      }
-      button {
-        flex-grow: 1;
-        border-radius: 0 3px 3px 0;
-        @include mobile {
-          flex-grow: 0;
-          padding: pxToRem(17) pxToRem(42);
-          border-radius: 3px;
-        }
-      }
-    }
-  }
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: $color-overlay-linear-gradient;
 }

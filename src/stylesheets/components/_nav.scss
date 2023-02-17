@@ -1,0 +1,29 @@
+@use '../abstracts/' as *;
+
+.header__left {
+  &--nav,
+  &--nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    li {
+      white-space: nowrap;
+    }
+    li:first-child a{
+      color: $text-color-primary;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      color: $color-black-four;
+      img {
+        padding-right: 5px;
+      }
+    }
+    @include mobile {
+      flex-wrap: nowrap;
+    }
+  }
+}
