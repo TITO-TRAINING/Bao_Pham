@@ -2,128 +2,26 @@
 
 main {
   background-color: $color-black-first;
-  padding: pxToRem(35) 0 pxToRem(70) pxToRem(70);
-  @include mobile {
-    padding: pxToRem(20) 0 pxToRem(20) pxToRem(20);
+  .container {
+    padding: 35px 0 35px 70px;
+    @include mobile {
+      padding-left: 20px;
+    }
   }
   section.section {
     background-color: $color-black-first;
-    padding-bottom: pxToRem(85);
+    margin-bottom: 85px;
     @include mobile {
-      padding-bottom: pxToRem(32);
+      margin-bottom: 32px;
     }
-  }
-}
-
-section.live {
-  .container__bottom {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: pxToRem(367);
-    overflow-x: auto;
-    padding-top: pxToRem(46);
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    @include mobile {
-      grid-auto-columns: pxToRem(176);
-      padding-top: 1rem;
-    }
-  }
-  .item {
-    display: flex;
-    @include mobile {
-      flex-direction: column;
-    }
-    &__img {
-      padding-right: 1rem;
-      @include mobile {
-        img {
-          width: 100%;
-        }
-      }
-    }
-    &__content {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      &__name {
-        @include GilroyRegular;
-        font-size: pxToRem(20);
-        line-height: pxToRem(30);
-        @include mobile {
-          font-size: pxToRem(14);
-          line-height: pxToRem(18);
-        }
-      }
-      &__follow {
-        font-size: pxToRem(14);
-        line-height: pxToRem(20);
-        margin-bottom: 0.8rem;
-        color: $color-black-four;
-        @include mobile {
-          font-size: pxToRem(12);
-        }
-      }
-      button {
-        font-size: pxToRem(14);
-        line-height: pxToRem(18);
-        border: 2px solid;
-        border-radius: 2px;
-        color: $branch-color-first;
-        padding: 0.2rem 0.4rem;
-        border-image-slice: 1;
-        border-image-source: $color-linear-gradient;
-        background: none;
-        @include mobile {
-          font-size: pxToRem(12);
-          line-height: pxToRem(16);
-        }
-      }
-    }
-  }
-}
-
-.container__top {
-  display: flex;
-  justify-content: space-between;
-  &__icon {
-    display: flex;
-    align-items: center;
-    margin-right: pxToRem(70);
-    @include mobile {
-      margin-right: pxToRem(20);
-    }
-    button {
-      border: none;
-      font-size: pxToRem(14);
-      line-height: pxToRem(22);
-      background: transparent;
-      color: $text-color-primary;
-    }
-    figure {
-      display: flex;
-    }
-  }
-}
-
-section.popular,
-section.movies,
-section.musics {
-  .cards {
-    @include cards;
-    grid-gap: 1rem;
   }
 }
 
 section.popular {
   .cards {
+    grid-auto-columns: 214px;
     @include mobile {
-      grid-auto-columns: pxToRem(101);
-      img {
-        width: 100%;
-      }
+      grid-auto-columns: 101px;
       .card__name {
         font-size: pxToRem(11);
         line-height: pxToRem(12);
@@ -134,11 +32,10 @@ section.popular {
 section.movies,
 section.musics {
   .cards {
+    grid-auto-columns: 400px;
+
     @include mobile {
-      grid-auto-columns: pxToRem(277);
-      img {
-        width: 100%;
-      }
+      grid-auto-columns: 277px;
       .card__name {
         font-size: pxToRem(14);
         line-height: pxToRem(20);

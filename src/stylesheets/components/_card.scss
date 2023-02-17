@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+
+.cards {
+  display: grid;
+  gap: 16px;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  @include mobile {
+    padding-top: 1rem;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+    position: relative;
+    &__name {
+      @include GilroyRegular;
+      position: absolute;
+      bottom: 1rem;
+      left: pxToRem(12);
+      font-size: pxToRem(20);
+      line-height: pxToRem(30);
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
