@@ -1,14 +1,37 @@
 @use '../abstracts/' as *;
 
 footer {
+  @include GilroyRegular;
+  font-size: pxToRem(18);
+  line-height: pxToRem(24);
   background-color: $color-black-first;
   border-top: 5px solid $color-black-third;
-  padding: pxToRem(67) 0;
   @include mobile {
-    padding: pxToRem(14) 0;
+    font-size: pxToRem(14);
   }
-  .container__footer {
+  .container {
     position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @include mobile {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .footer__layout {
+      display: grid;
+      gap: 2rem;
+      grid:
+        'logo logo logo'
+        'sv . md'
+        'em em em';
+      @include tablet {
+        grid:
+          'logo'
+          'sv'
+          'md'
+          'em';
+      }
+    }
     .footer__icon--arrow {
       position: absolute;
       right: 0;
@@ -20,91 +43,70 @@ footer {
       }
     }
     .footer__top {
+      grid-area: logo;
       text-align: center;
-      padding-top: 5rem;
-      padding-bottom: 1rem;
+      padding-top: 50px;
       div {
-        transform: translateY(2rem);
+        transform: 32px;
         @include tablet {
           transform: none;
         }
       }
-      @include mobile {
-        padding-top: pxToRem(32);
-        padding-bottom: pxToRem(44);
-      }
     }
-    .footer__center {
+    .border-right {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      max-width: pxToRem(1280);
-      margin: auto;
-      gap: pxToRem(33);
-      @include GilroyRegular;
-      font-size: pxToRem(18);
-      line-height: pxToRem(24);
-      padding: 0 pxToRem(20) pxToRem(53);
-      @include tablet {
-        flex-direction: column;
-      }
-      @include mobile {
-        font-size: pxToRem(14);
-        padding: 0 pxToRem(20) pxToRem(43);
-      }
-      &--services {
-        // margin-bottom: pxToRem(33);
-        li {
-          padding: 0 pxToRem(56);
-          @include mobile {
-            padding: 0 pxToRem(53);
-          }
-        }
-        li:last-child {
-          border: none;
-        }
-        @include mobile {
-          li:first-child {
-            padding-left: 0;
-          }
-          li:last-child {
-            padding-right: 0;
-          }
-        }
-      }
-      &--media {
-        li {
-          padding: 0 pxToRem(25);
-        }
-        li:first-child {
-          border: none;
-          // transform: translateY(-50%);
-          text-transform: uppercase;
-          color: $color-black-four;
-          @include mobile {
-            padding: 0;
-          }
-        }
-        li:last-child {
-          border: none;
-        }
-      }
-      ul li {
+      justify-content: center;
+      align-items: center;
+      li {
         border-right: 1px solid $color-black-third;
-        // display: inline-block;
-      }
-      ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
     }
-    .footer__bottom {
-      text-align: center;
-      padding-bottom: pxToRem(10);
-      font-size: 1rem;
+    .footer__center--services {
+      grid-area: sv;
+      li {
+        padding: 0 56px;
+        @include mobile {
+          padding: 0 50px;
+        }
+      }
+      li:last-child {
+        border: none;
+      }
       @include mobile {
-        font-size: pxToRem(14);
+        li:first-child {
+          padding-left: 0;
+        }
+        li:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+    .footer__center--media {
+      grid-area: md;
+      li {
+        padding: 0 pxToRem(25);
+      }
+      li:first-child {
+        border: none;
+        text-transform: uppercase;
+        color: $color-black-four;
+        @include mobile {
+          padding: 0;
+        }
+      }
+      li:last-child {
+        border: none;
+      }
+    }
+
+    .footer__bottom {
+      grid-area: em;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 100;
+      margin-top: 70px;
+      @include mobile {
+        margin-top: 25px;
       }
     }
   }
